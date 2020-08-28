@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<DEFECTS>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>D:\users\GABRIEL\Programming\c++\Engine\Tigris\vendor\glfw\src\</FILEPATH>
+      <FILENAME>win32_init.c</FILENAME>
+      <LINE>445</LINE>
+      <COLUMN>18</COLUMN>
+    </SFA>
+    <DEFECTCODE>6386</DEFECTCODE>
+    <DESCRIPTION>Saturação do buffer durante a escrita de "buffer":  o tamanho gravável é de "2048" bytes, porém "4096" bytes podem ter sido escritos.</DESCRIPTION>
+    <FUNCTION>_glfwInputErrorWin32</FUNCTION>
+    <DECORATED>_glfwInputErrorWin32</DECORATED>
+    <FUNCLINE>440</FUNCLINE>
+    <PROBABILITY>1</PROBABILITY>
+    <RANK>4</RANK>
+    <CATEGORY>
+      <RULECATEGORY>mspft</RULECATEGORY>
+    </CATEGORY>
+    <PATH>
+      <SFA>
+        <FILEPATH>D:\users\GABRIEL\Programming\c++\Engine\Tigris\vendor\glfw\src\</FILEPATH>
+        <FILENAME>win32_init.c</FILENAME>
+        <LINE>442</LINE>
+        <COLUMN>10</COLUMN>
+        <KEYEVENT>
+          <ID>1</ID>
+          <KIND>declaração</KIND>
+          <IMPORTANCE>Essential</IMPORTANCE>
+          <MESSAGE>"buffer" é um vetor de elementos de 1024 (2048 bytes)</MESSAGE>
+        </KEYEVENT>
+      </SFA>
+      <SFA>
+        <FILEPATH>D:\users\GABRIEL\Programming\c++\Engine\Tigris\vendor\glfw\src\</FILEPATH>
+        <FILENAME>win32_init.c</FILENAME>
+        <LINE>443</LINE>
+        <COLUMN>9</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>D:\users\GABRIEL\Programming\c++\Engine\Tigris\vendor\glfw\src\</FILEPATH>
+        <FILENAME>win32_init.c</FILENAME>
+        <LINE>445</LINE>
+        <COLUMN>18</COLUMN>
+        <KEYEVENT>
+          <ID>2</ID>
+          <KIND>uso</KIND>
+          <IMPORTANCE>Essential</IMPORTANCE>
+          <MESSAGE>Escrita inválida em "buffer[2047]" (intervalo gravável é de 0 a 1023)</MESSAGE>
+        </KEYEVENT>
+      </SFA>
+    </PATH>
+  </DEFECT>
+</DEFECTS>

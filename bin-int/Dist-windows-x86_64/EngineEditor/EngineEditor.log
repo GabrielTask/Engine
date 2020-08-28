@@ -1,0 +1,4 @@
+﻿  EditorProgram.cpp
+D:\users\GABRIEL\Programming\c++\Engine\Tigris\src\Base\Base.h(19,1): warning C4005: 'TG_API': redefinição de macro
+D:\users\GABRIEL\Programming\c++\Engine\Tigris\src\Base\Base.h(7): message : consulte a definição anterior de 'TG_API'
+  EngineEditor.vcxproj -> D:\users\GABRIEL\Programming\c++\Engine\EngineEditor\..\bin\Dist-windows-x86_64\EngineEditor\EngineEditor.exe

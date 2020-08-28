@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<DEFECTS>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>D:\users\GABRIEL\Programming\c++\Engine\Tigris\vendor\glfw\src\</FILEPATH>
+      <FILENAME>monitor.c</FILENAME>
+      <LINE>97</LINE>
+      <COLUMN>19</COLUMN>
+    </SFA>
+    <DEFECTCODE>6308</DEFECTCODE>
+    <DESCRIPTION>"realloc" pode retornar um ponteiro nulo: atribuir um ponteiro nulo a "_glfw.monitors", que é passada como um argumento para "realloc", causará um vazamento do bloco de memória original.</DESCRIPTION>
+    <FUNCTION>_glfwInputMonitor</FUNCTION>
+    <DECORATED>_glfwInputMonitor</DECORATED>
+    <FUNCLINE>91</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>D:\users\GABRIEL\Programming\c++\Engine\Tigris\vendor\glfw\src\</FILEPATH>
+      <FILENAME>monitor.c</FILENAME>
+      <LINE>103</LINE>
+      <COLUMN>40</COLUMN>
+    </SFA>
+    <DEFECTCODE>26451</DEFECTCODE>
+    <DESCRIPTION>Estouro aritmético: usando o operador '-' em um valor de byte 4 e, em seguida, convertendo o resultado em um valor de byte 8. Converta o valor no tipo mais amplo antes de chamar o operador '-' para evitar estouro (io.2).</DESCRIPTION>
+    <FUNCTION>_glfwInputMonitor</FUNCTION>
+    <DECORATED>_glfwInputMonitor</DECORATED>
+    <FUNCLINE>91</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>D:\users\GABRIEL\Programming\c++\Engine\Tigris\vendor\glfw\src\</FILEPATH>
+      <FILENAME>monitor.c</FILENAME>
+      <LINE>133</LINE>
+      <COLUMN>44</COLUMN>
+    </SFA>
+    <DEFECTCODE>26451</DEFECTCODE>
+    <DESCRIPTION>Estouro aritmético: usando o operador '-' em um valor de byte 4 e, em seguida, convertendo o resultado em um valor de byte 8. Converta o valor no tipo mais amplo antes de chamar o operador '-' para evitar estouro (io.2).</DESCRIPTION>
+    <FUNCTION>_glfwInputMonitor</FUNCTION>
+    <DECORATED>_glfwInputMonitor</DECORATED>
+    <FUNCLINE>91</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>D:\users\GABRIEL\Programming\c++\Engine\Tigris\vendor\glfw\src\</FILEPATH>
+      <FILENAME>monitor.c</FILENAME>
+      <LINE>164</LINE>
+      <COLUMN>21</COLUMN>
+    </SFA>
+    <DEFECTCODE>6011</DEFECTCODE>
+    <DESCRIPTION>Desreferenciando ponteiro NULL "monitor". </DESCRIPTION>
+    <FUNCTION>_glfwAllocMonitor</FUNCTION>
+    <DECORATED>_glfwAllocMonitor</DECORATED>
+    <FUNCLINE>161</FUNCLINE>
+    <PROBABILITY>1</PROBABILITY>
+    <RANK>4</RANK>
+    <CATEGORY>
+      <RULECATEGORY>mspft</RULECATEGORY>
+    </CATEGORY>
+    <PATH>
+      <SFA>
+        <FILEPATH>D:\users\GABRIEL\Programming\c++\Engine\Tigris\vendor\glfw\src\</FILEPATH>
+        <FILENAME>monitor.c</FILENAME>
+        <LINE>163</LINE>
+        <COLUMN>18</COLUMN>
+        <KEYEVENT>
+          <ID>1</ID>
+          <KIND>declaração</KIND>
+          <IMPORTANCE>Essential</IMPORTANCE>
+          <MESSAGE>"monitor" pode ser NULL</MESSAGE>
+        </KEYEVENT>
+      </SFA>
+      <SFA>
+        <FILEPATH>D:\users\GABRIEL\Programming\c++\Engine\Tigris\vendor\glfw\src\</FILEPATH>
+        <FILENAME>monitor.c</FILENAME>
+        <LINE>164</LINE>
+        <COLUMN>21</COLUMN>
+        <KEYEVENT>
+          <ID>2</ID>
+          <KIND>uso</KIND>
+          <IMPORTANCE>Essential</IMPORTANCE>
+          <MESSAGE>"monitor" não está referenciado, mas ainda pode ser NULL</MESSAGE>
+        </KEYEVENT>
+      </SFA>
+    </PATH>
+  </DEFECT>
+</DEFECTS>

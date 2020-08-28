@@ -1,0 +1,10 @@
+﻿  Application.cpp
+D:\users\GABRIEL\Programming\c++\Engine\Tigris\src\Base\Base.h(19,1): warning C4005: 'TG_API': redefinição de macro
+D:\users\GABRIEL\Programming\c++\Engine\Tigris\src\Base\Base.h(5): message : consulte a definição anterior de 'TG_API'
+D:\users\GABRIEL\Programming\c++\Engine\Tigris\src\Base\Application.cpp(53,33): warning C4244: '=': conversão de 'uint64_t' para 'float', possível perda de dados
+  Renderer.cpp
+D:\users\GABRIEL\Programming\c++\Engine\Tigris\src\Base\Base.h(19,1): warning C4005: 'TG_API': redefinição de macro
+D:\users\GABRIEL\Programming\c++\Engine\Tigris\src\Base\Base.h(5): message : consulte a definição anterior de 'TG_API'
+D:\users\GABRIEL\Programming\c++\Engine\Tigris\src\Graphics\Renderer.cpp(235,64): warning C4390: ';': instrução controlada vazia encontrada; é esta a intenção?
+  Gerando Código...
+  Tigris.vcxproj -> D:\users\GABRIEL\Programming\c++\Engine\Tigris\..\bin\Dist-windows-x86_64\Tigris\Tigris.lib

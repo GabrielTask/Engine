@@ -1,0 +1,4 @@
+﻿  PhysicalQuad.cpp
+D:\users\GABRIEL\Programming\c++\Nebula\Nebula\vendor\Physics\physics\PhysicalQuad.h(3,10): fatal error C1083: Não é possível abrir arquivo incluir: '../../../c++/Nebula/Nebula/vendor/Math/math/Math.h': No such file or directory
+  Physics.cpp
+  Gerando Código...

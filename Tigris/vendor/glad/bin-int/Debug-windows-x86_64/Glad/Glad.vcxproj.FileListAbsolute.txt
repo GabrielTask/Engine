@@ -1,0 +1,6 @@
+D:\users\GABRIEL\Programming\c++\Nebula\Nebula\vendor\glad\bin\Debug-windows-x86_64\Glad\Glad.pdb
+D:\users\GABRIEL\Programming\c++\Nebula\Nebula\vendor\glad\bin-int\Debug-windows-x86_64\Glad\Glad.pdb
+D:\users\GABRIEL\Programming\c++\Engine\Tigris\vendor\glad\bin\Debug-windows-x86_64\Glad\Glad.pdb
+D:\users\GABRIEL\Programming\c++\Engine\Tigris\vendor\glad\bin-int\Debug-windows-x86_64\Glad\Glad.pdb
+C:\Users\Gabriel\Desktop\Engine\Tigris\vendor\glad\bin\Debug-windows-x86_64\Glad\Glad.pdb
+C:\Users\Gabriel\Desktop\Engine\Tigris\vendor\glad\bin-int\Debug-windows-x86_64\Glad\Glad.pdb

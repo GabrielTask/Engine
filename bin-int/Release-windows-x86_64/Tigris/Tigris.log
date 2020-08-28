@@ -1,0 +1,4 @@
+﻿  Renderer.cpp
+D:\users\GABRIEL\Programming\c++\Engine\Tigris\src\Base\Base.h(19,1): warning C4005: 'TG_API': redefinição de macro
+D:\users\GABRIEL\Programming\c++\Engine\Tigris\src\Base\Base.h(5): message : consulte a definição anterior de 'TG_API'
+  Tigris.vcxproj -> D:\users\GABRIEL\Programming\c++\Engine\Tigris\..\bin\Release-windows-x86_64\Tigris\Tigris.lib

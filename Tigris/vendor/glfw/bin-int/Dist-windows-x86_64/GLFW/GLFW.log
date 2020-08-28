@@ -1,0 +1,19 @@
+﻿cl : linha de comando warning D9002: ignorando opção desconhecida '-std=c11'
+cl : linha de comando warning D9002: ignorando opção desconhecida '-lgdi32'
+  context.c
+  egl_context.c
+  init.c
+  input.c
+  monitor.c
+  osmesa_context.c
+  vulkan.c
+  wgl_context.c
+  win32_init.c
+  win32_joystick.c
+  win32_monitor.c
+  win32_thread.c
+  win32_time.c
+  win32_window.c
+  window.c
+  Gerando Código...
+  GLFW.vcxproj -> D:\users\GABRIEL\Programming\c++\Engine\Tigris\vendor\glfw\bin\Dist-windows-x86_64\GLFW\GLFW.lib

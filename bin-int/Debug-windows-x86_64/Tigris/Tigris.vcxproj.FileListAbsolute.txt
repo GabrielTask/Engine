@@ -1,0 +1,4 @@
+D:\users\GABRIEL\Programming\c++\Engine\bin\Debug-windows-x86_64\Tigris\Tigris.pdb
+D:\users\GABRIEL\Programming\c++\Engine\bin-int\Debug-windows-x86_64\Tigris\Tigris.pdb
+C:\Users\Gabriel\Desktop\Engine\bin\Debug-windows-x86_64\Tigris\Tigris.pdb
+C:\Users\Gabriel\Desktop\Engine\bin-int\Debug-windows-x86_64\Tigris\Tigris.pdb

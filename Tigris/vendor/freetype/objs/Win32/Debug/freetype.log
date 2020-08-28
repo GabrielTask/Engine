@@ -1,0 +1,49 @@
+﻿  autofit.c
+  ftbase.c
+  ftbbox.c
+  ftbdf.c
+  ftbitmap.c
+  ftcid.c
+  ftfstype.c
+  ftgasp.c
+  ftglyph.c
+  ftgxval.c
+  ftinit.c
+  ftmm.c
+  ftotval.c
+  ftpatent.c
+  ftpfr.c
+  ftstroke.c
+  ftsynth.c
+  ftsystem.c
+  fttype1.c
+  ftwinfnt.c
+  bdf.c
+  ftcache.c
+  cff.c
+  type1cid.c
+  ftgzip.c
+  ftlzw.c
+  pcf.c
+  pfr.c
+  psaux.c
+  pshinter.c
+  psmodule.c
+  raster.c
+  sfnt.c
+  smooth.c
+  truetype.c
+  type1.c
+  D:\users\GABRIEL\Programming\c++\Nova\Nova\vendor\freetype\src\smooth\ftgrays.c(534) : warning C4706: atribuição dentro de expressão condicional
+D:\users\GABRIEL\Programming\c++\Nova\Nova\vendor\freetype\src\sfnt\ttcolr.c(127,50): warning C4018:  '>': incompatibilidade de signed/unsigned (compilando arquivo de origem ..\..\..\src\sfnt\sfnt.c)
+D:\users\GABRIEL\Programming\c++\Nova\Nova\vendor\freetype\src\sfnt\ttcolr.c(136,40): warning C4018:  '>': incompatibilidade de signed/unsigned (compilando arquivo de origem ..\..\..\src\sfnt\sfnt.c)
+D:\users\GABRIEL\Programming\c++\Nova\Nova\vendor\freetype\src\sfnt\ttcpal.c(121,40): warning C4018:  '>': incompatibilidade de signed/unsigned (compilando arquivo de origem ..\..\..\src\sfnt\sfnt.c)
+D:\users\GABRIEL\Programming\c++\Nova\Nova\vendor\freetype\src\sfnt\ttcpal.c(153,50): warning C4018:  '>': incompatibilidade de signed/unsigned (compilando arquivo de origem ..\..\..\src\sfnt\sfnt.c)
+D:\users\GABRIEL\Programming\c++\Nova\Nova\vendor\freetype\src\sfnt\ttcpal.c(174,50): warning C4018:  '>': incompatibilidade de signed/unsigned (compilando arquivo de origem ..\..\..\src\sfnt\sfnt.c)
+  type42.c
+  winfnt.c
+D:\users\GABRIEL\Programming\c++\Nova\Nova\vendor\freetype\src\sfnt\ttcpal.c(195,57): warning C4018:  '>': incompatibilidade de signed/unsigned (compilando arquivo de origem ..\..\..\src\sfnt\sfnt.c)
+D:\users\GABRIEL\Programming\c++\Nova\Nova\vendor\freetype\src\sfnt\ttcpal.c(195,57): warning C4018: D:\users\GABRIEL\Programming\c++\Nova\Nova\vendor\freetype\src\truetype\ttgxvar.c(2201) : warning C4701: variável local possivelmente não inicializada 'fvar_head' usada
+  ftdebug.c
+     Criando biblioteca ..\..\..\objs\Win32\Debug\freetype.lib e objeto ..\..\..\objs\Win32\Debug\freetype.exp
+  freetype.vcxproj -> D:\users\GABRIEL\Programming\c++\Nova\Nova\vendor\freetype\builds\windows\vc2010\..\..\..\objs\Win32\Debug\freetype.dll

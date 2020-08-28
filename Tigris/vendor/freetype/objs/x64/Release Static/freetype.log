@@ -1,0 +1,71 @@
+﻿  cl : Linha de comando warning D9002 : ignorando opção desconhecida '/arch:SSE2'
+  cl : Linha de comando warning D9002 : ignorando opção desconhecida '/arch:SSE2'
+  cl : Linha de comando warning D9002 : ignorando opção desconhecida '/arch:SSE2'
+  autofit.c
+  ftbase.c
+  cl : Linha de comando warning D9002 : ignorando opção desconhecida '/arch:SSE2'
+  cl : Linha de comando warning D9002 : ignorando opção desconhecida '/arch:SSE2'
+  ftbbox.c
+  ftbdf.c
+  ftbitmap.c
+  ftcid.c
+  ftfstype.c
+  ftgasp.c
+  ftglyph.c
+  ftgxval.c
+  ftinit.c
+  ftmm.c
+  ftotval.c
+  ftpatent.c
+  ftpfr.c
+  ftstroke.c
+  ftsynth.c
+  ftsystem.c
+  fttype1.c
+  ftwinfnt.c
+  bdf.c
+  ftcache.c
+  cff.c
+  type1cid.c
+  ftgzip.c
+  ftlzw.c
+  pcf.c
+  pfr.c
+  psaux.c
+  pshinter.c
+  psmodule.c
+  raster.c
+  sfnt.c
+  smooth.c
+  truetype.c
+D:\users\GABRIEL\Programming\c++\Nova\Nova\vendor\freetype\src\psaux\psintrp.c(1005,29): warning C4267:  '=': conversão de 'size_t' para 'FT_Fast', possível perda de dados (compilando arquivo de origem ..\..\..\src\psaux\psaux.c)
+D:\users\GABRIEL\Programming\c++\Nova\Nova\vendor\freetype\src\sfnt\sfdriver.c(860,32): warning C4267:  '=': conversão de 'size_t' para 'FT_UInt', possível perda de dados (compilando arquivo de origem ..\..\..\src\sfnt\sfnt.c)
+D:\users\GABRIEL\Programming\c++\Nova\Nova\vendor\freetype\src\sfnt\sfdriver.c(1011,44): warning C4244:  'função': conversão de '__int64' para 'const unsigned int', possível perda de dados (compilando arquivo de origem ..\..\..\src\sfnt\sfnt.c)
+D:\users\GABRIEL\Programming\c++\Nova\Nova\vendor\freetype\src\sfnt\ttcolr.c(127,50): warning C4018:  '>': incompatibilidade de signed/unsigned (compilando arquivo de origem ..\..\..\src\sfnt\sfnt.c)
+D:\users\GABRIEL\Programming\c++\Nova\Nova\vendor\freetype\src\sfnt\ttcolr.c(136,40): warning C4018:  '>': incompatibilidade de signed/unsigned (compilando arquivo de origem ..\..\..\src\sfnt\sfnt.c)
+D:\users\GABRIEL\Programming\c++\Nova\Nova\vendor\freetype\src\sfnt\ttcpal.c(121,40): warning C4018:  '>': incompatibilidade de signed/unsigned (compilando arquivo de origem ..\..\..\src\sfnt\sfnt.c)
+D:\users\GABRIEL\Programming\c++\Nova\Nova\vendor\freetype\src\sfnt\ttcpal.c(153,50): warning C4018:  '>': incompatibilidade de signed/unsigned (compilando arquivo de origem ..\..\..\src\sfnt\sfnt.c)
+D:\users\GABRIEL\Programming\c++\Nova\Nova\vendor\freetype\src\sfnt\ttcpal.c(174,50): warning C4018:  '>': incompatibilidade de signed/unsigned (compilando arquivo de origem ..\..\..\src\sfnt\sfnt.c)
+D:\users\GABRIEL\Programming\c++\Nova\Nova\vendor\freetype\src\sfnt\ttcpal.c(195,57): warning C4018:  '>': incompatibilidade de signed/unsigned (compilando arquivo de origem ..\..\..\src\sfnt\sfnt.c)
+  type1.c
+D:\users\GABRIEL\Programming\c++\Nova\Nova\vendor\freetype\src\smooth\ftgrays.c(1704,26): warning C4267:  '+=': conversão de 'size_t' para 'TCoord', possível perda de dados (compilando arquivo de origem ..\..\..\src\smooth\smooth.c)
+D:\users\GABRIEL\Programming\c++\Nova\Nova\vendor\freetype\src\smooth\ftgrays.c(1704,26): warning C4267: D:\users\GABRIEL\Programming\c++\Nova\Nova\vendor\freetype\src\smooth\ftgrays.c(534) : warning C4706: atribuição dentro de expressão condicional
+  type42.c
+D:\users\GABRIEL\Programming\c++\Nova\Nova\vendor\freetype\src\truetype\ttgload.c(1877,42): warning C4312:  'conversão de tipo': conversão de 'unsigned long' para 'void *' de tamanho maior (compilando arquivo de origem ..\..\..\src\truetype\truetype.c)
+D:\users\GABRIEL\Programming\c++\Nova\Nova\vendor\freetype\src\type1\t1driver.c(277,51): warning C4267:  '=': conversão de 'size_t' para 'FT_ULong', possível perda de dados (compilando arquivo de origem ..\..\..\src\type1\type1.c)
+D:\users\GABRIEL\Programming\c++\Nova\Nova\vendor\freetype\src\type1\t1driver.c(298,58): warning C4267:  '=': conversão de 'size_t' para 'FT_ULong', possível perda de dados (compilando arquivo de origem ..\..\..\src\type1\type1.c)
+D:\users\GABRIEL\Programming\c++\Nova\Nova\vendor\freetype\src\type1\t1driver.c(330,65): warning C4267:  '=': conversão de 'size_t' para 'FT_ULong', possível perda de dados (compilando arquivo de origem ..\..\..\src\type1\type1.c)
+D:\users\GABRIEL\Programming\c++\Nova\Nova\vendor\freetype\src\type1\t1driver.c(360,23): warning C4267:  '=': conversão de 'size_t' para 'FT_UInt', possível perda de dados (compilando arquivo de origem ..\..\..\src\type1\type1.c)
+D:\users\GABRIEL\Programming\c++\Nova\Nova\vendor\freetype\src\type1\t1driver.c(569,59): warning C4267:  '=': conversão de 'size_t' para 'FT_ULong', possível perda de dados (compilando arquivo de origem ..\..\..\src\type1\type1.c)
+D:\users\GABRIEL\Programming\c++\Nova\Nova\vendor\freetype\src\type1\t1driver.c(578,58): warning C4267:  '=': conversão de 'size_t' para 'FT_ULong', possível perda de dados (compilando arquivo de origem ..\..\..\src\type1\type1.c)
+D:\users\GABRIEL\Programming\c++\Nova\Nova\vendor\freetype\src\type1\t1driver.c(587,61): warning C4267:  '=': conversão de 'size_t' para 'FT_ULong', possível perda de dados (compilando arquivo de origem ..\..\..\src\type1\type1.c)
+D:\users\GABRIEL\Programming\c++\Nova\Nova\vendor\freetype\src\type1\t1driver.c(596,63): warning C4267:  '=': conversão de 'size_t' para 'FT_ULong', possível perda de dados (compilando arquivo de origem ..\..\..\src\type1\type1.c)
+D:\users\GABRIEL\Programming\c++\Nova\Nova\vendor\freetype\src\type1\t1driver.c(606,58): warning C4267:  '=': conversão de 'size_t' para 'FT_ULong', possível perda de dados (compilando arquivo de origem ..\..\..\src\type1\type1.c)
+D:\users\GABRIEL\Programming\c++\Nova\Nova\vendor\freetype\src\type1\t1load.c(1737,68): warning C4244:  '=': conversão de '__int64' para 'FT_Int', possível perda de dados (compilando arquivo de origem ..\..\..\src\type1\type1.c)
+  winfnt.c
+D:\users\GABRIEL\Programming\c++\Nova\Nova\vendor\freetype\src\type1\t1load.c(1907,40): warning C4244:  '=': conversão de '__int64' para 'FT_Int', possível perda de dados (compilando arquivo de origem ..\..\..\src\type1\type1.c)
+D:\users\GABRIEL\Programming\c++\Nova\Nova\vendor\freetype\src\type1\t1load.c(1907,40): warning C4244: D:\users\GABRIEL\Programming\c++\Nova\Nova\vendor\freetype\src\truetype\ttgxvar.c(2201) : warning C4701: variável local possivelmente não inicializada 'fvar_head' usada
+D:\users\GABRIEL\Programming\c++\Nova\Nova\vendor\freetype\src\type42\t42parse.c(832,66): warning C4244:  '=': conversão de '__int64' para 'FT_Int', possível perda de dados (compilando arquivo de origem ..\..\..\src\type42\type42.c)
+  cl : Linha de comando warning D9002 : ignorando opção desconhecida '/arch:SSE2'
+  ftdebug.c
+  freetype.vcxproj -> D:\users\GABRIEL\Programming\c++\Nova\Nova\vendor\freetype\builds\windows\vc2010\..\..\..\objs\x64\Release Static\freetype.lib

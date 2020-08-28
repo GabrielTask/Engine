@@ -1,0 +1,80 @@
+workspace "Tigris"
+	architecture "x64"
+	startproject "EngineEditor"
+
+	configurations {"Debug", "Release", "Dist"}
+
+outputdir = "%{cfg.buildcfg}-%{cfg.system}-%{cfg.architecture}"
+
+include "Tigris/vendor/glad"
+include "Tigris/vendor/glfw"
+include "Tigris/vendor/imgui"
+
+project "Tigris"
+	location "Tigris"
+	kind "Staticlib"
+	language "C++"
+	cppdialect "C++17"
+	staticruntime "on"
+
+	targetdir ("bin/" ..outputdir.. "/%{prj.name}")
+	objdir ("bin-int/" ..outputdir.. "/%{prj.name}")
+
+
+
+
+files 
+	{
+
+	}
+
+	defines
+	{
+		"_CRT_SECURE_NO_WARNINGS"
+	}
+
+links
+	{
+	
+
+	}
+
+
+includedirs 
+	{
+
+
+
+	}
+
+	postbuildcommands
+	{
+
+		("{COPY} %{cfg.buildtarget.relpath} \"../bin/" .. outputdir .. "/SandboxApp/\"")
+	}
+
+filter "system:windows"
+	systemversion "latest"
+	defines 
+	{
+	
+	}
+
+filter "configurations:Debug"
+	defines "NB_DEBUG"
+	symbols "on"
+	runtime "Debug"
+filter "configurations:Release"
+	defines "NB_RELEASE"
+	symbols "on"
+	optimize "on"
+	runtime "Release"
+filter "configurations:Dist"
+	defines "NB_DIST"
+	runtime "Release"
+	optimize "on"
+
+
+
+
+
