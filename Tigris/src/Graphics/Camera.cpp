@@ -15,6 +15,7 @@ namespace Tigris
 	void Camera::SetOrthoProjection(float left, float right, float bottom, float top, float ZNear, float zFar)
 	{
 		m_Projection = glm::ortho(left, right, bottom, top);
+		m_ViewProjection = m_Projection;
 	}
 	const math::mat4& Camera::GetViewProjection()const
 	{

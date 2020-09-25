@@ -135,6 +135,9 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClInclude Include="src\Menu.h" />
+  </ItemGroup>
+  <ItemGroup>
     <ClCompile Include="src\EditorProgram.cpp" />
     <ClCompile Include="src\Menu.cpp" />
   </ItemGroup>
@@ -142,9 +145,6 @@
     <ProjectReference Include="..\Tigris\Tigris.vcxproj">
       <Project>{77D476D3-6376-A1A9-4C31-B5FD387228FA}</Project>
     </ProjectReference>
-  </ItemGroup>
-  <ItemGroup>
-    <ClInclude Include="src\Menu.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

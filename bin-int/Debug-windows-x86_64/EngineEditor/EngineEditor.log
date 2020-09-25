@@ -1,7 +1,12 @@
 ﻿  EditorProgram.cpp
 C:\Users\Gabriel\Desktop\Engine\Tigris\src\Base\Base.h(19,1): warning C4005: 'TG_API': redefinição de macro
 C:\Users\Gabriel\Desktop\Engine\Tigris\src\Base\Base.h(7): message : consulte a definição anterior de 'TG_API'
-C:\Users\Gabriel\Desktop\Engine\EngineEditor\src\EditorProgram.cpp(101,25): warning C4018: '<': incompatibilidade de signed/unsigned
-C:\Users\Gabriel\Desktop\Engine\EngineEditor\src\EditorProgram.cpp(102,26): warning C4018: '<': incompatibilidade de signed/unsigned
-C:\Users\Gabriel\Desktop\Engine\EngineEditor\src\EditorProgram.cpp(104,1): warning C4305: 'argumento': truncamento de 'double' para 'float'
+C:\Users\Gabriel\Desktop\Engine\EngineEditor\src\EditorProgram.cpp(116,25): warning C4018: '<': incompatibilidade de signed/unsigned
+C:\Users\Gabriel\Desktop\Engine\EngineEditor\src\EditorProgram.cpp(117,26): warning C4018: '<': incompatibilidade de signed/unsigned
+C:\Users\Gabriel\Desktop\Engine\EngineEditor\src\EditorProgram.cpp(120,1): warning C4305: 'argumento': truncamento de 'double' para 'float'
+C:\Users\Gabriel\Desktop\Engine\EngineEditor\src\EditorProgram.cpp(200,1): warning C4312: 'conversão de tipo': conversão de 'uint32_t' para 'void *' de tamanho maior
+  Menu.cpp
+C:\Users\Gabriel\Desktop\Engine\Tigris\src\Base\Base.h(19,1): warning C4005: 'TG_API': redefinição de macro
+C:\Users\Gabriel\Desktop\Engine\Tigris\src\Base\Base.h(7): message : consulte a definição anterior de 'TG_API'
+  Gerando Código...
   EngineEditor.vcxproj -> C:\Users\Gabriel\Desktop\Engine\EngineEditor\..\bin\Debug-windows-x86_64\EngineEditor\EngineEditor.exe

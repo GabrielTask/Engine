@@ -34,6 +34,9 @@ namespace Tigris
 
         void* GetNativeWindow() override;
 
+
+        void Terminate() override;
+
     private:
         void InitBack();
 

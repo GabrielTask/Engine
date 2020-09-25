@@ -10,7 +10,7 @@ namespace Tigris
 		uint32_t GetKey()const { return m_Key; }
 	private:
 		uint32_t m_Key;
-
+		
 
 	};
 
@@ -19,7 +19,7 @@ namespace Tigris
 	public:
 		KeyPressedEvent(uint32_t key):KeyEvent(key) {}
 		Type(EventType::KeyPressed)
-		
+		category(EventCategory::KeyBoardEvent)
 	};
 
 	class KeyReleasedEvent : public KeyEvent
@@ -27,6 +27,7 @@ namespace Tigris
 	public:
 		KeyReleasedEvent(uint32_t key) :KeyEvent(key) {}
 		Type(EventType::KeyReleased)
+		category(EventCategory::KeyBoardEvent)
 	};
 
 	class KeyRepeatEvent : public KeyEvent
@@ -34,6 +35,7 @@ namespace Tigris
 	public:
 		KeyRepeatEvent(uint32_t key) :KeyEvent(key) {}
 		Type(EventType::KeyRepeat)
+		category(EventCategory::KeyBoardEvent)
 	};
 
 	class CharEnteredEvent : public Event
@@ -42,6 +44,7 @@ namespace Tigris
 		CharEnteredEvent(uint32_t codepoint) :
 			m_CodePoint(codepoint){}
 		Type(EventType::CharEntered)
+		category(EventCategory::KeyBoardEvent)
 		uint32_t GetCodePoint()const { return m_CodePoint; }
 	private:
 		uint32_t m_CodePoint;

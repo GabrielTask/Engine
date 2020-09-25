@@ -1,4 +1,5 @@
 #pragma once
+#include "maths.h"
 
 namespace Tigris
 {
@@ -8,7 +9,14 @@ namespace Tigris
 		static bool IsKeyPressed(uint32_t key);
 		static bool IsMousePressed(uint32_t button);
 		static bool IsButtonPressed(uint32_t button);
-		static std::pair<uint32_t, uint32_t> GetMousePosition();
+		static math::vec2 GetMousePosition();
+		static void BeginMouseMark();
+
+		static math::vec2 GetDeltaMousePosition();
+
+	private:
+
+		static math::vec2 mousePos;
 	};
 }
 

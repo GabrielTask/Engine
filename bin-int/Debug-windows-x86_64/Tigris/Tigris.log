@@ -1,4 +1,4 @@
-﻿  OpenGLRendererAPI.cpp
+﻿  OpenGLTexture.cpp
 C:\Users\Gabriel\Desktop\Engine\Tigris\src\Base\Base.h(19,1): warning C4005: 'TG_API': redefinição de macro
 C:\Users\Gabriel\Desktop\Engine\Tigris\src\Base\Base.h(5): message : consulte a definição anterior de 'TG_API'
   Tigris.vcxproj -> C:\Users\Gabriel\Desktop\Engine\Tigris\..\bin\Debug-windows-x86_64\Tigris\Tigris.lib

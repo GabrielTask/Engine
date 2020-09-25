@@ -7,7 +7,9 @@ namespace Tigris
 	{
 
 	public:
+		OpenGLTexture2D() :m_Width(0),m_Height(0),m_RendererID(0){}
 		OpenGLTexture2D(uint32_t width, uint32_t height);
+		OpenGLTexture2D(uint32_t width, uint32_t height, uint32_t ID);
 		OpenGLTexture2D(const std::string& path);
 		~OpenGLTexture2D();
 		virtual uint32_t GetWidth() const override;
@@ -15,7 +17,7 @@ namespace Tigris
 
 		virtual uint32_t GetHeight() const override;
 
-
+		virtual void Resize(uint32_t width, uint32_t height)const override;
 		virtual uint32_t GetRendererID() const override;
 
 
@@ -29,11 +31,15 @@ namespace Tigris
 		{
 			return (GetRendererID() == other.GetRendererID());
 		}
+
+
+
 	private:
 		uint32_t m_Width, m_Height;
 		uint32_t m_RendererID;
-		uint32_t m_InternalFormat;
-		uint32_t m_DataFormat;
+		//uint32_t m_InternalFormat;
+		//uint32_t m_DataFormat;
+
 
 	};
 }

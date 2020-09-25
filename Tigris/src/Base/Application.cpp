@@ -4,6 +4,8 @@
 #include "Events/KeyboardEvent.h"
 #include "Events/MouseEvent.h"
 #include "Events/WindowEvent.h"
+#include "Graphics/GraphicsContext.h"
+#include "Input.h"
 
 namespace Tigris
 {
@@ -15,16 +17,25 @@ Application* Application::s_Instance = nullptr;
 	{
 		s_Instance = this;
 		m_Window = Window::Create(1280, 720, "Window Test");
-		m_Window->SetCallBack([](Event& e)->void {Application::Get()->OnEvent(e);});
-		m_Window->SetVSync(1);
+		GraphicsContext::SetDefaultContext(m_Window->GetNativeWindow());
+		m_Window->SetCallBack([](Event& e)->void {Application::Get().OnEvent(e);});
+		//m_Window->SetVSync(1);
 
 		Renderer2D::Init();
+
+		m_ImGuiLayer = new ImGuiLayer();
+		PushOverlay(m_ImGuiLayer);
 	}
 
 
+	Application::~Application()
+	{
+
+	}
+
 	bool Application::OnWindowClose(WindowClosedEvent& e)
 	{
-		Application::Get()->m_Running = 0;
+		Application::Get().m_Running = 0;
 		return 1;
 	}
 
@@ -32,23 +43,29 @@ Application* Application::s_Instance = nullptr;
 	void Application::OnUpdate()
 	{
 
-
 	float previousTime = 0.0f;
+
 	while (m_Running)
 	{
 		//----------------UpdateClock----------------//
 		Clock::Tick();
+		//Input::BeginMouseMark();
 		m_DeltaTime = Clock::GetClock() - previousTime;
 		previousTime = Clock::GetClock();
 		//-------------------------------------------//
 
-		RenderCommand::Clear();
+		
 
+
+	
+		m_ImGuiLayer->Begin();
 		//---------------UpdateLayers----------------//
 		for (auto Layer : m_LayerStack)
 		{
 			Layer->OnUpdate(m_DeltaTime/100000.0f);
+			Layer->OnImguiRender(m_DeltaTime / 100000.0f);
 		}
+		m_ImGuiLayer->End();
 		//-------------------------------------------//
 
 		//----------------UpdateWindow----------------//
@@ -120,6 +137,7 @@ Application* Application::s_Instance = nullptr;
 	void Application::PushOverlay(Layer* layer)
 	{
 		m_LayerStack.PushOverlay(layer);
+		layer->OnAtach();
 	}
 
 	void Application::PopOverlay(Layer* layer)

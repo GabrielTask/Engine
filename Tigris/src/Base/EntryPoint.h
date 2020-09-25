@@ -2,11 +2,11 @@
 #include "Base/Base.h"
 
 
-extern Tigris::Application* CreateAppication();
+extern Tigris::Application* CreateApplication();
 
 int main(int argc, char** argv)
 {
-	Tigris::Application* app = CreateAppication();
+	Tigris::Application* app = CreateApplication();
 	app->OnUpdate();
 	delete app;
 

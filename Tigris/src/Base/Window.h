@@ -21,6 +21,7 @@ namespace Tigris
 		virtual float GetAspectRatio()const = 0;
 		virtual std::pair<uint32_t, uint32_t>GetSize()const = 0;
 		virtual void* GetNativeWindow() = 0;
+		virtual void Terminate() = 0;
 
 	public:
 		static Ref<Window> Create(uint32_t width, uint32_t height, const char* name);

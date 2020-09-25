@@ -14,8 +14,15 @@ namespace Tigris
 
 
 		virtual void SwapBuffers() override;
+
+		void Unbind() override;
+
+
+
 	private:
-		GLFWwindow* m_WindlwHandle;
+		GLFWwindow* m_WindowHandle;
+	public:
+		static GLFWwindow* m_WindowDefaultHandle;
 
 	};
 

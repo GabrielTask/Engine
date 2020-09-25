@@ -3,6 +3,7 @@
 #include "Events/WindowEvent.h"
 #include "Base/Time.h"
 #include "Base/LayerStack.h"
+#include "ImGui/ImGuiLayer.h"
 #include <stdint.h>
 
 
@@ -12,9 +13,10 @@ namespace Tigris
 	{
 	public:
 		Application();
+		~Application();
 		void OnUpdate();
-		void OnEvent(Event& e);
 		const Ref<Window>& GetWindow() { return m_Window; }
+		void OnEvent(Event& e);
 
 		void PushLayer(Layer* layer);
 		void PopLayer(Layer* layer);
@@ -27,10 +29,11 @@ namespace Tigris
 		Ref<Window> m_Window;
 		TimeInterval m_DeltaTime;
 		LayerStack m_LayerStack;
+		ImGuiLayer* m_ImGuiLayer;
 		bool m_Running = true;
 
 	public:
-		static Application* Get() { return s_Instance; }
+		static Application& Get() { return *s_Instance; }
 	private:
 		static Application* s_Instance;
 	};

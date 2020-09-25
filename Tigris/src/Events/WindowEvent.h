@@ -10,6 +10,7 @@ namespace Tigris
 	public:
 		WindowClosedEvent(){}
 		Type(EventType::WindowClosed)
+		category(EventCategory::WindowEvent)
 	};
 
 	class WindowResizedEvent : public Event
@@ -17,6 +18,7 @@ namespace Tigris
 	public:
 		WindowResizedEvent(uint32_t width, uint32_t height) :m_Width(width), m_Height(height) {}
 		Type(EventType::WindowResized)
+		category(EventCategory::WindowEvent)
 			std::pair<uint32_t, uint32_t> GetSize() { return { m_Width,m_Height }; }
 			uint32_t GetWidth() { return m_Width; }
 			uint32_t GetHeight() { return m_Height; }
@@ -29,6 +31,7 @@ namespace Tigris
 	public:
 		WindowMovedEvent(uint32_t xpos, uint32_t ypos):m_Xpos(xpos),m_Ypos(ypos){}
 		Type(EventType::WindowMoved)
+		category(EventCategory::WindowEvent)
 			std::pair<uint32_t, uint32_t> GetPos() { return{ m_Xpos, m_Ypos }; }
 		uint32_t GetXpos() { return m_Xpos; }
 		uint32_t GetYpos() { return m_Ypos; }
@@ -40,24 +43,28 @@ namespace Tigris
 	{
 	public:
 		Type(EventType::WindowFocused)
+		category(EventCategory::WindowEvent)
 	};
 
 	class WindowUnfocusedEvent : public Event
 	{
 	public:
 		Type(EventType::WindowUnfocused)
+		category(EventCategory::WindowEvent)
 	};
 
 	class WindowMaximizedEvent : public Event
 	{
 	public:
 		Type(EventType::WindowMaximized)
+		category(EventCategory::WindowEvent)
 	};
 
 	class WindowRestoredEvent : public Event
 	{
 	public:
 		Type(EventType::WindowRestored);
+		category(EventCategory::WindowEvent)
 	};
 
 
@@ -78,6 +85,7 @@ namespace Tigris
 		}
 
 		Type(EventType::Dropped);
+		category(EventCategory::WindowEvent)
 		const char* GetPath()const  { if (m_Index < m_Path_count)return m_Paths[m_Index++]; return nullptr; }
 		const char* operator[](uint32_t index)const { return m_Paths[index]; }
 	private:

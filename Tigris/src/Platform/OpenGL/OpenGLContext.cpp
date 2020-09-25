@@ -6,25 +6,37 @@
 
 namespace Tigris
 {
+	GLFWwindow* OpenGLContext::m_WindowDefaultHandle = nullptr;
 
 	OpenGLContext::OpenGLContext(void* window)
-		:m_WindlwHandle((GLFWwindow*)window)
+		:m_WindowHandle((GLFWwindow*)window)
 	{
 		
 		Assert(window);
-
+		glfwMakeContextCurrent(m_WindowHandle);
+		Assert(gladLoadGLLoader((GLADloadproc)glfwGetProcAddress));
 	}
 
 	void OpenGLContext::Init()
 	{
-		glfwMakeContextCurrent(m_WindlwHandle);
-		Assert(gladLoadGLLoader((GLADloadproc)glfwGetProcAddress));
+		glfwMakeContextCurrent(m_WindowHandle);
+		
 		
 	}
 
 	void OpenGLContext::SwapBuffers()
 	{
-		glfwSwapBuffers(m_WindlwHandle);
+		glfwSwapBuffers(m_WindowHandle);
+	}
+
+	void OpenGLContext::Unbind()
+	{
+		glfwMakeContextCurrent(m_WindowDefaultHandle);
+	}
+
+	void GraphicsContext::SetDefaultContext(void* window)
+	{
+		OpenGLContext::m_WindowDefaultHandle = (GLFWwindow*)window;
 	}
 
 }

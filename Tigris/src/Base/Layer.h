@@ -12,11 +12,12 @@ namespace Tigris
 		Layer() = default;
 		~Layer() = default;
 
-		virtual void OnAtach() = 0;
-		virtual void OnDetach() = 0;
-		virtual void OnEvent(Event& e) = 0;
-		virtual void OnUpdate(TimeInterval dt) = 0;
+		virtual void OnAtach() {}
+		virtual void OnDetach() {};
+		virtual void OnEvent(Event& e) {};
+		virtual void OnUpdate(TimeInterval dt) {};
 
+		virtual void OnImguiRender(TimeInterval dt) {};
 
 
 	};

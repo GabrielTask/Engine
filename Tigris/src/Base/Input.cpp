@@ -25,9 +25,20 @@ namespace Tigris
 		return PlatformInput::IsButtonPressed(0);
 	}
 
-	std::pair<uint32_t, uint32_t> Input::GetMousePosition()
+	math::vec2 Input::GetMousePosition()
 	{
 		return PlatformInput::GetMousePosition();
+	}
+
+	math::vec2 Input::GetDeltaMousePosition()
+	{
+		return PlatformInput::GetDeltaMousePosition();
+
+	}
+
+	void Input::BeginMouseMark()
+	{
+		PlatformInput::BeginMouseMark();
 	}
 
 }

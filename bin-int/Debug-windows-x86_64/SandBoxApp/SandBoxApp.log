@@ -1,0 +1,38 @@
+﻿  GraphicalInterface.cpp
+C:\Users\Gabriel\Desktop\Engine\Tigris\src\Base\Base.h(19,1): warning C4005: 'TG_API': redefinição de macro
+C:\Users\Gabriel\Desktop\Engine\Tigris\src\Base\Base.h(7): message : consulte a definição anterior de 'TG_API'
+C:\Users\Gabriel\Desktop\Engine\SandBoxApp\GraphicalInterface.cpp(92,205): warning C4244: 'argumento': conversão de 'float' para 'uint32_t', possível perda de dados
+C:\Users\Gabriel\Desktop\Engine\SandBoxApp\GraphicalInterface.cpp(92,112): warning C4244: 'argumento': conversão de 'float' para 'uint32_t', possível perda de dados
+C:\Users\Gabriel\Desktop\Engine\SandBoxApp\GraphicalInterface.cpp(106,134): warning C4244: 'argumento': conversão de 'uint32_t' para 'float', possível perda de dados
+  Panel.cpp
+C:\Users\Gabriel\Desktop\Engine\Tigris\src\Base\Base.h(19,1): warning C4005: 'TG_API': redefinição de macro
+C:\Users\Gabriel\Desktop\Engine\Tigris\src\Base\Base.h(7): message : consulte a definição anterior de 'TG_API'
+  SandBoxProgram.cpp
+C:\Users\Gabriel\Desktop\Engine\Tigris\src\Base\Base.h(19,1): warning C4005: 'TG_API': redefinição de macro
+C:\Users\Gabriel\Desktop\Engine\Tigris\src\Base\Base.h(7): message : consulte a definição anterior de 'TG_API'
+C:\Users\Gabriel\Desktop\Engine\SandBoxApp\SandBoxProgram.cpp(72,85): warning C4244: 'argumento': conversão de 'float' para 'uint32_t', possível perda de dados
+C:\Users\Gabriel\Desktop\Engine\SandBoxApp\SandBoxProgram.cpp(72,73): warning C4244: 'argumento': conversão de 'float' para 'uint32_t', possível perda de dados
+C:\Users\Gabriel\Desktop\Engine\SandBoxApp\SandBoxProgram.cpp(73,34): warning C4244: 'argumento': conversão de 'float' para 'uint32_t', possível perda de dados
+C:\Users\Gabriel\Desktop\Engine\SandBoxApp\SandBoxProgram.cpp(73,20): warning C4244: 'argumento': conversão de 'float' para 'uint32_t', possível perda de dados
+C:\Users\Gabriel\Desktop\Engine\SandBoxApp\SandBoxProgram.cpp(95,136): warning C4244: 'argumento': conversão de 'uint32_t' para 'float', possível perda de dados
+C:\Users\Gabriel\Desktop\Engine\SandBoxApp\SandBoxProgram.cpp(95,122): warning C4244: 'argumento': conversão de 'uint32_t' para 'float', possível perda de dados
+C:\Users\Gabriel\Desktop\Engine\SandBoxApp\SandBoxProgram.cpp(128,23): warning C4244: '=': conversão de 'uint32_t' para 'float', possível perda de dados
+C:\Users\Gabriel\Desktop\Engine\SandBoxApp\SandBoxProgram.cpp(129,25): warning C4244: '=': conversão de 'uint32_t' para 'float', possível perda de dados
+C:\Users\Gabriel\Desktop\Engine\SandBoxApp\SandBoxProgram.cpp(130,14): warning C4244: 'inicializando': conversão de 'uint32_t' para 'float', possível perda de dados
+C:\Users\Gabriel\Desktop\Engine\SandBoxApp\SandBoxProgram.cpp(131,14): warning C4244: 'inicializando': conversão de 'uint32_t' para 'float', possível perda de dados
+C:\Users\Gabriel\Desktop\Engine\SandBoxApp\SandBoxProgram.cpp(136,21): warning C4244: 'argumento': conversão de 'float' para 'uint32_t', possível perda de dados
+C:\Users\Gabriel\Desktop\Engine\SandBoxApp\SandBoxProgram.cpp(136,17): warning C4244: 'argumento': conversão de 'float' para 'uint32_t', possível perda de dados
+C:\Users\Gabriel\Desktop\Engine\SandBoxApp\SandBoxProgram.cpp(144,34): warning C4244: 'argumento': conversão de 'float' para 'uint32_t', possível perda de dados
+C:\Users\Gabriel\Desktop\Engine\SandBoxApp\SandBoxProgram.cpp(144,20): warning C4244: 'argumento': conversão de 'float' para 'uint32_t', possível perda de dados
+C:\Users\Gabriel\Desktop\Engine\SandBoxApp\SandBoxProgram.cpp(151,34): warning C4244: 'argumento': conversão de 'float' para 'uint32_t', possível perda de dados
+C:\Users\Gabriel\Desktop\Engine\SandBoxApp\SandBoxProgram.cpp(151,20): warning C4244: 'argumento': conversão de 'float' para 'uint32_t', possível perda de dados
+C:\Users\Gabriel\Desktop\Engine\SandBoxApp\SandBoxProgram.cpp(158,34): warning C4244: 'argumento': conversão de 'float' para 'uint32_t', possível perda de dados
+C:\Users\Gabriel\Desktop\Engine\SandBoxApp\SandBoxProgram.cpp(158,21): warning C4244: 'argumento': conversão de 'float' para 'uint32_t', possível perda de dados
+C:\Users\Gabriel\Desktop\Engine\SandBoxApp\SandBoxProgram.cpp(165,34): warning C4244: 'argumento': conversão de 'float' para 'uint32_t', possível perda de dados
+C:\Users\Gabriel\Desktop\Engine\SandBoxApp\SandBoxProgram.cpp(165,21): warning C4244: 'argumento': conversão de 'float' para 'uint32_t', possível perda de dados
+C:\Users\Gabriel\Desktop\Engine\SandBoxApp\SandBoxProgram.cpp(187,36): warning C4244: 'argumento': conversão de 'float' para 'uint32_t', possível perda de dados
+C:\Users\Gabriel\Desktop\Engine\SandBoxApp\SandBoxProgram.cpp(187,22): warning C4244: 'argumento': conversão de 'float' para 'uint32_t', possível perda de dados
+C:\Users\Gabriel\Desktop\Engine\SandBoxApp\SandBoxProgram.cpp(193,18): warning C4244: '=': conversão de 'float' para 'int32_t', possível perda de dados
+C:\Users\Gabriel\Desktop\Engine\SandBoxApp\SandBoxProgram.cpp(194,18): warning C4244: '=': conversão de 'float' para 'int32_t', possível perda de dados
+  Gerando Código...
+  SandBoxApp.vcxproj -> C:\Users\Gabriel\Desktop\Engine\SandBoxApp\..\bin\Debug-windows-x86_64\SandBoxApp\SandBoxApp.exe

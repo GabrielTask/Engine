@@ -16,6 +16,7 @@ namespace Tigris
 
 	void LayerStack::PushLayer(Layer* layer)
 	{
+		layer->OnAtach();
 		m_Layers.emplace(m_Layers.begin()+m_LayerInsertIndex, layer);
 		m_LayerInsertIndex++;
 	}

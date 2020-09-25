@@ -13,6 +13,9 @@
     <Filter Include="src\Graphics">
       <UniqueIdentifier>{0D564864-F9B8-D708-A23E-10BF8E80A38B}</UniqueIdentifier>
     </Filter>
+    <Filter Include="src\ImGui">
+      <UniqueIdentifier>{170E22B3-8378-D629-CCB6-87CF3860B47E}</UniqueIdentifier>
+    </Filter>
     <Filter Include="src\Platform">
       <UniqueIdentifier>{21CA02E5-0D2D-9289-B6B2-CA3FA2F45D0C}</UniqueIdentifier>
     </Filter>
@@ -37,6 +40,9 @@
       <Filter>src\Base</Filter>
     </ClInclude>
     <ClInclude Include="src\Base\EntryPoint.h">
+      <Filter>src\Base</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Base\Input.h">
       <Filter>src\Base</Filter>
     </ClInclude>
     <ClInclude Include="src\Base\Layer.h">
@@ -69,6 +75,9 @@
     <ClInclude Include="src\Graphics\Camera.h">
       <Filter>src\Graphics</Filter>
     </ClInclude>
+    <ClInclude Include="src\Graphics\FrameBuffer.h">
+      <Filter>src\Graphics</Filter>
+    </ClInclude>
     <ClInclude Include="src\Graphics\GraphicsContext.h">
       <Filter>src\Graphics</Filter>
     </ClInclude>
@@ -87,10 +96,16 @@
     <ClInclude Include="src\Graphics\Texture.h">
       <Filter>src\Graphics</Filter>
     </ClInclude>
+    <ClInclude Include="src\ImGui\ImGuiLayer.h">
+      <Filter>src\ImGui</Filter>
+    </ClInclude>
     <ClInclude Include="src\Platform\OpenGL\OpenGLBuffer.h">
       <Filter>src\Platform\OpenGL</Filter>
     </ClInclude>
     <ClInclude Include="src\Platform\OpenGL\OpenGLContext.h">
+      <Filter>src\Platform\OpenGL</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Platform\OpenGL\OpenGLFrameBuffer.h">
       <Filter>src\Platform\OpenGL</Filter>
     </ClInclude>
     <ClInclude Include="src\Platform\OpenGL\OpenGLRendererAPI.h">
@@ -102,6 +117,9 @@
     <ClInclude Include="src\Platform\OpenGL\OpenGLTexture.h">
       <Filter>src\Platform\OpenGL</Filter>
     </ClInclude>
+    <ClInclude Include="src\Platform\Windows\WindowsInput.h">
+      <Filter>src\Platform\Windows</Filter>
+    </ClInclude>
     <ClInclude Include="src\Platform\Windows\WindowsWindow.h">
       <Filter>src\Platform\Windows</Filter>
     </ClInclude>
@@ -111,11 +129,12 @@
     <ClInclude Include="src\Tigris.h">
       <Filter>src</Filter>
     </ClInclude>
-    <ClInclude Include="src\Base\Input.h" />
-    <ClInclude Include="src\Platform\Windows\WindowsInput.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="src\Base\Application.cpp">
+      <Filter>src\Base</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Base\Input.cpp">
       <Filter>src\Base</Filter>
     </ClCompile>
     <ClCompile Include="src\Base\LayerStack.cpp">
@@ -131,6 +150,9 @@
       <Filter>src\Graphics</Filter>
     </ClCompile>
     <ClCompile Include="src\Graphics\Camera.cpp">
+      <Filter>src\Graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Graphics\FrameBuffer.cpp">
       <Filter>src\Graphics</Filter>
     </ClCompile>
     <ClCompile Include="src\Graphics\GraphicsContext.cpp">
@@ -151,10 +173,19 @@
     <ClCompile Include="src\Graphics\Texture.cpp">
       <Filter>src\Graphics</Filter>
     </ClCompile>
+    <ClCompile Include="src\ImGui\ImGuiBuild.cpp">
+      <Filter>src\ImGui</Filter>
+    </ClCompile>
+    <ClCompile Include="src\ImGui\ImGuiLayer.cpp">
+      <Filter>src\ImGui</Filter>
+    </ClCompile>
     <ClCompile Include="src\Platform\OpenGL\OpenGLBuffer.cpp">
       <Filter>src\Platform\OpenGL</Filter>
     </ClCompile>
     <ClCompile Include="src\Platform\OpenGL\OpenGLContext.cpp">
+      <Filter>src\Platform\OpenGL</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Platform\OpenGL\OpenGLFrameBuffer.cpp">
       <Filter>src\Platform\OpenGL</Filter>
     </ClCompile>
     <ClCompile Include="src\Platform\OpenGL\OpenGLRendererAPI.cpp">
@@ -166,6 +197,9 @@
     <ClCompile Include="src\Platform\OpenGL\OpenGLTexture.cpp">
       <Filter>src\Platform\OpenGL</Filter>
     </ClCompile>
+    <ClCompile Include="src\Platform\Windows\WindowsInput.cpp">
+      <Filter>src\Platform\Windows</Filter>
+    </ClCompile>
     <ClCompile Include="src\Platform\Windows\WindowsWindow.cpp">
       <Filter>src\Platform\Windows</Filter>
     </ClCompile>
@@ -175,7 +209,5 @@
     <ClCompile Include="vendor\stbi\stb_image.cpp">
       <Filter>vendor\stbi</Filter>
     </ClCompile>
-    <ClCompile Include="src\Base\Input.cpp" />
-    <ClCompile Include="src\Platform\Windows\WindowsInput.cpp" />
   </ItemGroup>
 </Project>

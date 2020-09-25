@@ -91,6 +91,12 @@ namespace Tigris
 		return m_NativeWindow;
 	}
 
+	void WindowsWindow::Terminate()
+	{
+		glfwDestroyWindow(m_NativeWindow);
+		m_NativeWindow = nullptr;
+	}
+
 	void WindowsWindow::InitBack()
 	{
 		glfwSetWindowCloseCallback(m_NativeWindow, [](GLFWwindow* window)

@@ -163,4 +163,68 @@ filter "configurations:Dist"
 	optimize "on"
 
 
+project "SandBoxApp"
+	location "SandBoxApp"
+	kind "ConsoleApp"
+	language "C++"
+	cppdialect "C++17"
+	staticruntime "on"
+
+	targetdir ("bin/" ..outputdir.. "/%{prj.name}")
+	objdir ("bin-int/" ..outputdir.. "/%{prj.name}")
+
+	
+
+
+
+files 
+	{
+		"%{prj.name}/src/**.cpp",
+		"%{prj.name}/src/**.h",
+	}
+
+	defines
+	{
+		"_CRT_SECURE_NO_WARNINGS"
+	}
+
+links
+	{
+		"Tigris"
+	}
+
+
+includedirs 
+	{
+		"%{prj.name}/src",
+		"Tigris/src",
+		"Tigris/vendor/Math",
+		"Tigris/vendor/glm",
+	}
+
+
+
+filter "system:windows"
+	systemversion "latest"
+	defines 
+	{
+		"TG_PLATFORM_WINDOWS"
+	}
+
+filter "configurations:Debug"
+	defines "TG_DEBUG"
+	symbols "on"
+	runtime "Debug"
+filter "configurations:Release"
+	defines "TG_RELEASE"
+	symbols "on"
+	optimize "on"
+	runtime "Release"
+filter "configurations:Dist"
+	defines "TG_DIST"
+	symbols "off"
+	runtime "Release"
+	optimize "on"
+
+
 
